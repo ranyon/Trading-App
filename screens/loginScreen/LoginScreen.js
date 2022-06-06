@@ -26,7 +26,7 @@ export default function LoginScreen() {
         <Text>Sign Up</Text>
         </center>
         <TextInput placeholder='Email' value={email} onChangeText={text=>setEmail(text)}/>
-        <TextInput placeholder='Password'value={password} onChangeText={text=>setPassword(text)}/>
+        <TextInput placeholder='Password'value={password} secureTextEntry onChangeText={text=>setPassword(text)}/>
         <TouchableOpacity onPress={RegisterUser}>
           <Text>Sign Up</Text>
         </TouchableOpacity>
