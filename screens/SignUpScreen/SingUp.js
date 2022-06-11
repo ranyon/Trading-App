@@ -51,6 +51,10 @@ export default function SignUp() {
           <TouchableOpacity onPress={RegisterUser} style={styles.buttonContainer}>
             <Text style={styles.loginButtonText}>Sign Up</Text>
           </TouchableOpacity>
+
+          <TouchableOpacity onPress={()=>{navigation.navigate('Login')}} style={styles.buttonContainer}>
+            <Text style={styles.loginButtonText}>Login In</Text>
+          </TouchableOpacity>
         
         </View>
       </View>
@@ -93,7 +97,7 @@ const styles = StyleSheet.create({
       justifyContent:'center',
       alignItems:'center',
       borderRadius:10,
-      marginVertical:50,
+      marginVertical:30,
       color:'white'
 
 
