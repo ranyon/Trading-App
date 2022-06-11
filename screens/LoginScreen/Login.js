@@ -14,11 +14,12 @@ export default function Login() {
   const navigation = useNavigation()
 
   useEffect(()=>{
-     authentication.onAuthStateChanged(user =>{
+    const unsubscribe= authentication.onAuthStateChanged(user =>{
       if(user){
         navigation.navigate("Home")
       }
     })
+    return unsubscribe
 
     
   }, [])
@@ -49,7 +50,7 @@ export default function Login() {
           <TextInput style={styles.input} placeholder='Password'value={password} secureTextEntry onChangeText={text=>setPassword(text)}/>
 
           <TouchableOpacity onPress={LoginUser} style={styles.buttonContainer}>
-            <Text style={styles.loginButtonText}>Sign Up</Text>
+            <Text style={styles.loginButtonText}>Log In</Text>
           </TouchableOpacity>
         
         </View>
