@@ -8,6 +8,7 @@ import { signInWithEmailAndPassword } from 'firebase/auth'
 
 
 export default function Login() {
+  const[displayName,setDisplayName]= useState('')
   const[email,setEmail]= useState('')
   const[password,setPassword]= useState('')
 
@@ -24,8 +25,8 @@ export default function Login() {
     
   }, [])
 
-  const LoginUser = ()=>{
-    signInWithEmailAndPassword(authentication,email,password)
+  const LoginUser = async ()=>{
+    await signInWithEmailAndPassword(authentication,email,password)
     .then((re)=>{
       console.log(re);
     })
@@ -46,6 +47,7 @@ export default function Login() {
           <Text style={styles.loginText}>Login</Text>
           </View>
           
+          <TextInput style={styles.input} placeholder='User Name' value={displayName} onChangeText={text=>setDisplayName(text)}/>
           <TextInput style={styles.input} placeholder='Email' value={email} onChangeText={text=>setEmail(text)}/>
           <TextInput style={styles.input} placeholder='Password'value={password} secureTextEntry onChangeText={text=>setPassword(text)}/>
 

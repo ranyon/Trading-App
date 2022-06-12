@@ -8,6 +8,7 @@ import { createUserWithEmailAndPassword } from 'firebase/auth'
 
 
 export default function SignUp() {
+  const[displayName,setDisplayName]= useState('')
   const[email,setEmail]= useState('')
   const[password,setPassword]= useState('')
 
@@ -23,8 +24,8 @@ export default function SignUp() {
     
   }, [])
 
-  const RegisterUser = ()=>{
-    createUserWithEmailAndPassword(authentication,email,password)
+  const RegisterUser = async ()=>{
+   await createUserWithEmailAndPassword(authentication,email,password)
     .then((re)=>{
       console.log(re);
     })
@@ -45,6 +46,7 @@ export default function SignUp() {
           <Text style={styles.loginText}>Sign Up</Text>
           </View>
           
+          <TextInput style={styles.input} placeholder='User Name' value={displayName} onChangeText={text=>setDisplayName(text)}/>
           <TextInput style={styles.input} placeholder='Email' value={email} onChangeText={text=>setEmail(text)}/>
           <TextInput style={styles.input} placeholder='Password'value={password} secureTextEntry onChangeText={text=>setPassword(text)}/>
 
