@@ -4,6 +4,7 @@ import { authentication } from '../../components/firebaseConfig/firebase-config'
 import { useNavigation } from '@react-navigation/native'
 import { signOut } from 'firebase/auth'
 import { useEffect } from 'react'
+import { getFirestore, collection, getDocs } from 'firebase/firestore/lite'
 
 export default function Home() {
 
