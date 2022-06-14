@@ -4,7 +4,7 @@ import { View,Text } from 'react-native'
 export default function ProfileScreen() {
   return (
     <View>
-        <Text>ProfileScree</Text>
+        <Text>ProfileScreen</Text>
     </View>
   )
 }
