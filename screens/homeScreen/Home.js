@@ -14,26 +14,28 @@ export default function Home() {
   const navigation= useNavigation()
 
   
-
-  const handleSignOut = async ()=>{
-    await signOut(authentication).then(()=>{
-      console.log("you are logged out")
-      navigation.navigate("Login")
-    })
-    .catch(error => alert(error.message))
+    // Sign Out Handler 
+    const handleSignOut = async ()=>{
+      await signOut(authentication).then(()=>{
+        console.log("you are logged out")
+        navigation.navigate("Login")
+      })
+      .catch(error => alert(error.message))
+      // Sign Out Handler 
+      
   }
   return (
       <View style={styles.container}>
-
+        {/* Sign Out fun  */}
           <Text>Home</Text>
           <TouchableOpacity onPress={handleSignOut}>
             <Text>Sign Out</Text>
           </TouchableOpacity>
+        {/* Sign Out fun  */}
 
           {/* Tab Navigator */}
           <View>
             <NavBar/>
-
           </View>
           {/* Tab Navigator */}
       </View>
