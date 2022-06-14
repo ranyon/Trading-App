@@ -1,10 +1,13 @@
 import React from 'react'
 import {View,Text, TouchableOpacity,StyleSheet} from 'react-native'
+import NavBar from '../../components/firebaseConfig/screenComponents/navBar'
 import { authentication } from '../../components/firebaseConfig/firebase-config'
 import { useNavigation } from '@react-navigation/native'
 import { signOut } from 'firebase/auth'
 import { useEffect } from 'react'
 import { getFirestore, collection, getDocs } from 'firebase/firestore/lite'
+
+//we will import firestore to firebase .config
 
 export default function Home() {
 
@@ -26,6 +29,13 @@ export default function Home() {
           <TouchableOpacity onPress={handleSignOut}>
             <Text>Sign Out</Text>
           </TouchableOpacity>
+
+          {/* Tab Navigator */}
+          <View>
+            <NavBar/>
+
+          </View>
+          {/* Tab Navigator */}
       </View>
   )
 }
