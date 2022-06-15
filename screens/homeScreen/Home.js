@@ -22,7 +22,7 @@ export default function Home() {
       })
       .catch(error => alert(error.message))
       // Sign Out Handler 
-      
+
   }
   return (
       <View style={styles.container}>
