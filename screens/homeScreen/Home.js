@@ -34,7 +34,7 @@ export default function Home() {
         {/* Sign Out fun  */}
 
           {/* Tab Navigator */}
-          <View>
+          <View style={styles.navBarContainer}>
             <NavBar/>
           </View>
           {/* Tab Navigator */}
@@ -48,5 +48,8 @@ const styles = StyleSheet.create({
     justifyContent:'center',
     alignItems:'center',
     marginTop:70
+  },
+  navBarContainer:{
+    marginTop:100
   }
 })
