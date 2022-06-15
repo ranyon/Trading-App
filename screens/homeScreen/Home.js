@@ -50,6 +50,6 @@ const styles = StyleSheet.create({
     marginTop:70
   },
   navBarContainer:{
-    marginTop:100
+    marginTop:600
   }
 })
