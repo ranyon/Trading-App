@@ -4,7 +4,9 @@ import { View ,Text,StyleSheet} from 'react-native'
 export default function NavBar() {
   return (
     <View style={styles.container}>
-        <Text>Tab navigation</Text>
+        <Text>H</Text>
+        <Text>P</Text>
+        <Text>S</Text>
     </View>
   )
 }
