@@ -13,6 +13,6 @@ export default function NavBar() {
 
 const styles= StyleSheet.create({
   container:{
-
+    
   }
 })
