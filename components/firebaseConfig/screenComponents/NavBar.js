@@ -13,6 +13,7 @@ export default function NavBar() {
 
 const styles= StyleSheet.create({
   container:{
-    flexDirection:'row'
+    flexDirection:'row',
+    marginHorizontal:10
   }
 })
