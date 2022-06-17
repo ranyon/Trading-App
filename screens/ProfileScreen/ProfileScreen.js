@@ -11,6 +11,6 @@ export default function ProfileScreen() {
 
 const styles= StyleSheet.create({
   container:{
-    flexDirection:'row',
+    marginHorizontal:10,
   }
 })
