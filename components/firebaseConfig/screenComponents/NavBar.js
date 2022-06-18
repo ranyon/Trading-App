@@ -12,8 +12,16 @@ export default function NavBar() {
         <TouchableOpacity onPress={()=>navigation.navigate('Home')}>
         <Text>H</Text>
         </TouchableOpacity>
+
+        <TouchableOpacity onPress={()=>navigation.navigate('Profile')}>
         <Text>P</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity onPress={()=>navigation.navigate('Home')}>
         <Text>S</Text>
+        </TouchableOpacity>
+
+        
     </View>
   )
 }
