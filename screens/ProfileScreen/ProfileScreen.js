@@ -26,7 +26,7 @@ export default function Home() {
   return (
       <View style={styles.container}>
         {/* Sign Out fun  */}
-          <Text>Home</Text>
+          <Text>Profile</Text>
           <TouchableOpacity onPress={handleSignOut}>
             <Text>Sign Out</Text>
           </TouchableOpacity>
