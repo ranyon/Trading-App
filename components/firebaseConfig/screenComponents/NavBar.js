@@ -17,7 +17,7 @@ export default function NavBar() {
         <Text>P</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity onPress={()=>navigation.navigate('Home')}>
+        <TouchableOpacity  style={styles.navBarBtnContainer} onPress={()=>navigation.navigate('Home')}>
         <Text>S</Text>
         </TouchableOpacity>
 
