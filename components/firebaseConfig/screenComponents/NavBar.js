@@ -30,5 +30,8 @@ const styles= StyleSheet.create({
   container:{
     flexDirection:'row',
     marginHorizontal:10
+  },
+  navBarBtnContainer:{
+    fontSize
   }
 })
