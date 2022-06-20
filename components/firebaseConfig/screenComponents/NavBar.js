@@ -13,7 +13,7 @@ export default function NavBar() {
         <Text style={styles.navBarBtnContainer}>H</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity onPress={()=>navigation.navigate('Profile')}>
+        <TouchableOpacity  style={styles.navBarBtnContainer} onPress={()=>navigation.navigate('Profile')}>
         <Text>P</Text>
         </TouchableOpacity>
 
