@@ -32,6 +32,6 @@ const styles= StyleSheet.create({
     marginHorizontal:10
   },
   navBarBtnContainer:{
-    fontSize
+    fontSize:10
   }
 })
