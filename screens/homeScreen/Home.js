@@ -51,6 +51,9 @@ const styles = StyleSheet.create({
     alignItems:'center',
     marginTop:70
   },
+  homeText:{
+    marginHorizontal:50
+  },
   navBarContainer:{
     marginTop:600
   }
