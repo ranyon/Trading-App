@@ -27,9 +27,11 @@ export default function Home() {
   return (
       <View style={styles.container}>
         {/* Sign Out fun  */}
+        <View style={styles.homeTextContainer}>
           <Text>Home</Text>
           <Text>Home</Text>
           <Text>Home</Text>
+        </View>
           <TouchableOpacity onPress={handleSignOut}>
             <Text>Sign Out</Text>
           </TouchableOpacity>
@@ -51,7 +53,7 @@ const styles = StyleSheet.create({
     alignItems:'center',
     marginTop:70
   },
-  homeText:{
+  homeTextContainer:{
     marginHorizontal:50
   },
   navBarContainer:{
