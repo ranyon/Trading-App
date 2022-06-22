@@ -29,7 +29,7 @@ export default function Home() {
         {/* Sign Out fun  */}
         <View style={styles.homeTextContainer}>
           <Text>Home</Text>
-          <Text>Home</Text>
+          <Text>Unit one</Text>
           <Text>Home</Text>
         </View>
           <TouchableOpacity onPress={handleSignOut}>
