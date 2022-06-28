@@ -30,6 +30,7 @@ export default function Home() {
         <View style={styles.homeTextContainer}>
           <Text>Home</Text>
           <Text>Unit one</Text>
+          <Text>Unit one</Text>
           
           
         </View>
