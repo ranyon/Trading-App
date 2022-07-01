@@ -31,6 +31,7 @@ export default function Home() {
           <Text>Home</Text>
           <Text>Unit one</Text>
           <Text>Unit one</Text>
+          <Text>Unit one</Text>
           
           
           
