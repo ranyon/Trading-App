@@ -11,9 +11,10 @@ import { getFirestore, collection, getDocs } from 'firebase/firestore/lite'
 
 export default function Home() {
 
+  //tb exported to profile
   const navigation= useNavigation()
 
-  
+  //tb exported to profile
     // Sign Out Handler 
     const handleSignOut = async ()=>{
       await signOut(authentication).then(()=>{
@@ -31,13 +32,10 @@ export default function Home() {
           <Text>Home</Text>
           <Text>Unit one</Text>
           <Text>Unit one</Text>
-          <Text>Unit one</Text>
-          <Text>Unit one</Text>
-          <Text>Unit one</Text>
-          
-          
-          
         </View>
+
+
+          {/* tb exported to profile  */}
           <TouchableOpacity onPress={handleSignOut}>
             <Text>Sign Out</Text>
           </TouchableOpacity>
