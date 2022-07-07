@@ -8,6 +8,7 @@ export default function NavBar() {
   const navigation= useNavigation()
 
   return (
+    // navigation 
     <View style={styles.container}>
         <TouchableOpacity onPress={()=>navigation.navigate('Home')}>
         <Text style={styles.navBarBtnContainer}>H</Text>
@@ -20,9 +21,8 @@ export default function NavBar() {
         <TouchableOpacity  style={styles.navBarBtnContainer} onPress={()=>navigation.navigate('Home')}>
         <Text>S</Text>
         </TouchableOpacity>
-
-        
     </View>
+      // navigation 
   )
 }
 
