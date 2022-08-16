@@ -1,6 +1,6 @@
 import React from 'react'
 import {View,Text, TouchableOpacity,StyleSheet} from 'react-native'
-import NavBar from '../screenComponents/navBar'
+
 import { authentication } from '../../components/firebaseConfig/firebase-config'
 import { useNavigation } from '@react-navigation/native'
 import { signOut } from 'firebase/auth'
@@ -43,7 +43,7 @@ export default function Home() {
 
           {/* Tab Navigator */}
           <View style={styles.navBarContainer}>
-            <NavBar/>
+            
           </View>
           {/* Tab Navigator */}
       </View>
