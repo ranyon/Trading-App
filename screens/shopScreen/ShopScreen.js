@@ -1,6 +1,6 @@
 import React from 'react'
 import {View,Text,StyleSheet} from 'react-native'
-import NavBar from '../screenComponents/navBar'
+
 // import { useNavigation } from '@react-navigation/native'
 // import { signOut } from 'firebase/auth'
 
@@ -11,7 +11,7 @@ export default function ShopScreen() {
     <View style={styles.container}>
         <Text>Shop</Text>
         <View style={styles.navBarContainer}>
-            <NavBar/>
+            
         </View>
     </View>
   
